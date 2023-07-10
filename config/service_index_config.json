@@ -1,18 +1,18 @@
 {
     "autocomplete":{
-        "index" : ".openquery-autocomplete",
+        "index" : "autocomplete",
         "field":{
             "searchField" :["keyword.autocomplete", "keyword.autocomplete_middle", "keyword.autocomplete_reverse","keyword.keyword^5.0","keyword.prefix^2.0"],
             "highlightField" : ["keyword.keyword","keyword.autocomplete", "keyword.prefix","keyword.autocomplete_middle", "keyword.autocomplete_reverse"]
         }
     },
     "related":{
-        "index": ".openquery-related"
+        "index": "related"
     },
     "popquery":{
-    	"index": ".openquery-popquery"
+    	"index": "popquery"
     },
     "speller":{
-        "index": ".openquery-speller"
+        "index": "speller"
     }
 }
