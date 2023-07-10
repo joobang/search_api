@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "name": "search_k4_1.0",
+      "script": "./app.js",
+      "watch": true,
+      "exec_mode": "cluster",
+      "instance": 1
+    }
+  ]
+}

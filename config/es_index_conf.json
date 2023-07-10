@@ -1,0 +1,259 @@
+{
+    "all" : {
+        "index" : ["streamdocs"],
+        "category" : ["law","informatization","infrastructure","verification","security"],
+        "field" : {
+            "all": [
+                "synap_contents_psk.kobrick^1.5",
+                "synap_contents_psk.standard^0.7",
+                "title_kskn.kobrick^1.5",
+                "title_kskn.standard^0.7",
+                "title_kskn.keyword^5.0",
+                "info_psk.kobrick^1.5",
+                "info_psk.standard^0.7",
+                "keywordList_k^10"
+            ],
+            "infoField": [
+                "info_psk.kobrick^1.5",
+                "info_psk.standard^0.7",
+                "synap_contents_psk.kobrick^1.5",
+                "synap_contents_psk.standard^0.7",
+                "keywordList_k^10"
+            ],
+            "titleField": [
+                "title_kskn.kobrick^1.5",
+                "title_kskn.standard^0.7",
+                "title_kskn.keyword^5.0",
+                "keywordList_k^10"
+            ],
+            "termsField" : [],
+            "highlightField" : {
+                "synap_contents_psk.*":{},
+                "title_kskn.*":{},
+                "info_psk.*":{}
+            }
+        }
+    },
+    "page" : {
+        "index" : ["pagedocs"],
+        "category" : ["law","informatization","infrastructure","verification","security"],
+        "field" : {
+            "searchField": [
+                "page_contents_psk.kobrick^1.5",
+                "page_contents_psk.standard^0.7",
+                "keywordList_k^10"
+            ],
+            "termsField" : [],
+            "highlightField" : {
+                "keywordList_k": {
+                  "matched_fields": ["keywordList_k"]
+                },
+                "page_contents_psk.*": {
+                  "matched_fields": ["page_contents_psk.kobrick","page_contents_psk.standard"]
+                }
+              },
+            "sortField":"page_i"
+        }
+    },
+    "stream" : {
+        "index" : ["streamdocs"],
+        "category" : ["law","informatization","infrastructure","verification","security"],
+        "field" : {
+            "all": [
+                "synap_contents_psk.kobrick^1.5",
+                "synap_contents_psk.standard^0.7",
+                "title_kskn.kobrick^1.5",
+                "title_kskn.standard^0.7",
+                "title_kskn.keyword^5.0",
+                "info_psk.kobrick^1.5",
+                "info_psk.standard^0.7",
+                "keywordList_k^10"
+            ],
+            "infoField": [
+                "info_psk.kobrick^1.5",
+                "info_psk.standard^0.7",
+                "synap_contents_psk.kobrick^1.5",
+                "synap_contents_psk.standard^0.7",
+                "keywordList_k^10"
+            ],
+            "titleField": [
+                "title_kskn.kobrick^1.5",
+                "title_kskn.standard^0.7",
+                "title_kskn.keyword^5.0",
+                "keywordList_k^10"
+            ],
+            "termsField" : [],
+            "highlightField" : {
+                "synap_contents_psk.*":{},
+                "title_kskn.*":{},
+                "info_psk.*":{}
+            },
+            "sortField":"revision_dt"
+        }
+    },
+    "vocabulary" : {
+        "index" : [".openquery-voca"],
+        "field" : {
+            "all" : [
+                "vocabulary.term.kobrick",
+                "vocabulary.term.keyword^3.0",
+                "vocabulary.term.autocomplete^0.5",
+                "vocabulary.abbr.kobrick",
+                "vocabulary.abbr.keyword^3.0",
+                "vocabulary.abbr.autocomplete^0.5",
+                "vocabulary.term_eng.standard^0.7",
+                "vocabulary.term_eng.keyword^3.0",
+                "vocabulary.term_eng.autocomplete^0.5",
+                "vocabulary.info.kobrick",
+                "vocabulary.info.standard^0.7"
+              ],
+            "termsField" : [
+                "vocabulary.term.kobrick",
+                "vocabulary.term.keyword^3.0",
+                "vocabulary.term.autocomplete^0.5",
+                "vocabulary.abbr.kobrick",
+                "vocabulary.abbr.keyword^3.0",
+                "vocabulary.abbr.autocomplete^0.5",
+                "vocabulary.term_eng.standard^0.7",
+                "vocabulary.term_eng.keyword^3.0",
+                "vocabulary.term_eng.autocomplete^0.5"
+            ],
+            "infoField" : [
+                "vocabulary.info.kobrick",
+                "vocabulary.info.standard^0.7"
+            ],
+            "filterField":["vocabulary.term.chosung"],
+            "highlightField" : {
+                "vocabulary.*":{}
+            },
+            "sortField":{
+                "vocabulary.term.keyword" :{
+                    "order" : "asc"
+                }
+            }
+        }
+    },
+    "faq" : {
+        "index" : [".openquery-faq"],
+        "field" : {
+            "all" : [
+                "title.keyword^3.0",
+                "title.kobrick",
+                "title.standard^0.7",
+                "content.kobrick",
+                "content.standard^0.7"
+              ],
+            "titleField" : [
+                "title.keyword^3.0",
+                "title.kobrick",
+                "title.standard^0.7"
+            ],
+            "contentField" : [
+                "content.kobrick",
+                "content.standard^0.7"
+            ],
+            "highlightField" : {
+                "title.*":{},
+                "content.*":{}
+            },
+            "sortField":{
+                "title.keyword" :{
+                    "order" : "asc"
+                }
+            }
+        }
+    },
+    "qna" : {
+        "index" : [".openquery-qna"],
+        "field" : {
+            "all" : [
+                "q_title.keyword^3.0",
+                "q_title.kobrick",
+                "q_title.standard^0.7",
+                "q_content.kobrick",
+                "a_content.kobrick"
+              ],
+            "titleField" : [
+                "q_title.keyword^3.0",
+                "q_title.kobrick",
+                "q_title.standard^0.7"
+            ],
+            "contentField" : [
+                "q_content.kobrick",
+                "a_content.kobrick"
+            ],
+            "qContentField" : [
+                "q_content.kobrick"
+            ],
+            "aContentField" : [
+                "a_content.kobrick"
+            ],
+            "highlightField" : {
+                "q_title.*":{},
+                "q_content.*":{},
+                "a_content.*":{}
+            },
+            "sortField":"q_timestamp"
+        }
+    },
+    "mypage" :{
+        "index" : ["actionlog"],
+        "search" : {
+            "field" :{
+                "idField":["ssoId_k"],
+                "actionField" :["action_k"],
+                "aggsField":["keyword_k"]
+            }
+        },
+        "click" : {
+            "field":{
+                "idField":["ssoId_k"],
+                "actionField" :["action_k"],
+                "sortField":["timestamp_dt"],
+                "categoryField" :["category_k"]
+            }
+        },
+        "download":{
+
+        }
+    },
+    "category" :{
+        "index" :["cateogory"],
+        "field" : {
+            "termField" : ["keyword_k"]
+        }
+    },
+    "popcontents" : {
+        "index" : ["popcontents"],
+        "category" : ["law","informatization","infrastructure","verification","security"],
+        "field" : {
+            "all": [
+                "title_kskn.kobrick^1.5",
+                "title_kskn.standard^0.7",
+                "title_kskn.keyword^5.0",
+                "page_contents_psk.kobrick^1.5",
+                "page_contents_psk.standard^0.7",
+                "keywordList_k^10"
+            ],
+            "titleField": [
+                "title_kskn.kobrick^1.5",
+                "title_kskn.standard^0.7",
+                "title_kskn.keyword^5.0",
+                "keywordList_k^10"
+            ],
+            "infoField": [
+                "page_contents_psk.kobrick^1.5",
+                "page_contents_psk.standard^0.7",
+                "keywordList_k^10"
+            ],
+            "termsField" : [],
+            "highlightField" : {
+                "page_contents_psk.*":{},
+                "title_kskn.*":{}
+            },
+            "sortField":"page_i"
+        }
+    }
+}
+
+
